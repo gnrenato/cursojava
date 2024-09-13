@@ -11,5 +11,11 @@ public class Inferencia {
 		System.out.println(a);
 		System.out.println(b);
 		System.out.println(c);
+		
+		double d; // variavel declarada 
+		d = 123.65; // variavel inicializada
+		System.out.println(d); // variavel usada
+		
+		//Quando utilizamos o var temos sempre que inicializala na linha var nome = valor;
 	}
 }
