@@ -11,7 +11,7 @@ public class PrimitivoVsObjetos {
 		s.toUpperCase();
 		
 		int a = 2;
-		
+		System.out.println(a);
 		
 	}
 }
