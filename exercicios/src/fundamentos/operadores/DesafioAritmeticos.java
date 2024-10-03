@@ -1,4 +1,4 @@
-package fundamentos;
+package fundamentos.operadores;
 
 public class DesafioAritmeticos {
 	// 44 - Desafio Operadores Aritmeticos
