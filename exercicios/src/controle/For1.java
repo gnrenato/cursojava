@@ -1,7 +1,5 @@
 package controle;
 
-import java.util.Iterator;
-
 public class For1 {
 // 71 - FOR 01
 	public static void main(String[] args) {
@@ -12,16 +10,17 @@ public class For1 {
 			System.out.printf("Bom dia! i = %d\n", contador);
 		}
 
-		// o FOR não impede que de fazermos os comandos de maneira separada - não utilizar
+		// o FOR não impede que de fazermos os comandos de maneira separada - não
+		// utilizar
 		int x = 2;
 		for (; x < 10;) {
 			System.out.println("x = " + x);
 			x++;
 		}
-		
-		// laço infinto 
-		//for (;;) {
-		//}
+
+		// laço infinto
+		// for (;;) {
+		// }
 
 	}
 }
