@@ -5,7 +5,7 @@ public class For1 {
 	public static void main(String[] args) {
 		// utilizamos o FOR para resolver a mesma condição do exercicio WhileDeterminado
 		// No caso do FOR criamos a variavel definimos a condição e definimos o contador
-		// na passagem de parametro.
+		// na passagem de parametro. Teste	
 		for (int contador = 0; contador <= 20; contador++) {
 			System.out.printf("Bom dia! i = %d\n", contador);
 		}
