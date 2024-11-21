@@ -1,7 +1,5 @@
 package controle;
 
-import java.util.Iterator;
-
 public class DesafioFor {
 
 	public static void main(String[] args) {
