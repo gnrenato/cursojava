@@ -3,12 +3,11 @@ package classe;
 public class ProdutoTeste {
 	// 93 - Classe Produto
 	public static void main(String[] args) {
-
-		Produto p1 = new Produto(); // instancia de produto
-		p1.nome = "Notebook";
-		p1.preco = 4356.89;
-		p1.desconto = 0.25;
-
+		
+		//utilizando construtor criado com parametros
+		Produto p1 = new Produto("Notebook", 4356.89,0.25); // instancia de produto
+		
+		//Utilizando construtor sem utilizar parametro
 		var p2 = new Produto(); // instancia de produto
 		p2.nome = "Caneta Preta";
 		p2.preco = 12.56;
