@@ -4,18 +4,19 @@ public class Produto {
 	// 93 - Classe Produto
 	String nome;
 	double preco;
-	double desconto;
+	static double desconto = 0.25; // Definindo membro estatico da classe(static) 107 - Desafio Membros de Classe
+									// vs Instância
 
 	// 102 - Construtor #02
 	// Contrutor com parametro
-	Produto(String nomeInicial, double precoInicial, double descontoInicial) {
+	Produto(String nomeInicial, double precoInicial) {
 		nome = nomeInicial;
 		preco = precoInicial;
-		desconto = descontoInicial;
 	}
+
 	// Contrutor sem parametro
 	Produto() {
-		
+
 	}
 
 	// 98 - Metodos 02
