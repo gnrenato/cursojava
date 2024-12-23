@@ -3,7 +3,7 @@ package oo.composicao;
 // 143 - Relacionamento Um pra Um - pode ser unidericional ou biderecional.
 public class Motor {
 
-	Carro carro;
+	final Carro carro; // para manter seguro definimos como uma constante
 	boolean ligado = false;
 	double fatorInjecao = 1;
 

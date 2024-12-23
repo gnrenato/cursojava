@@ -3,7 +3,7 @@ package oo.composicao;
 //143 - Relacionamento Um pra Um
 public class Carro {
 
-	Motor motor;
+	final Motor motor; // para manter seguro definimos como uma constante
 
 	Carro() {
 		this.motor = new Motor(this);
