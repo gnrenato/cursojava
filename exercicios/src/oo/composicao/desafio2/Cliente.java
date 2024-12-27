@@ -8,7 +8,7 @@ public class Cliente {
 	String nome;
 	List<Compra> compra = new ArrayList<Compra>();
 
-	Cliente(String nome, Compra compra) {
+	Cliente(String nome) {
 		this.nome = nome;
 	}
 
@@ -24,5 +24,12 @@ public class Cliente {
 		}
 
 		return total;
+	}
+
+	void mostrarCompras() {
+
+		for (Compra compra2 : compra) {
+			System.out.println(compra2);
+		}
 	}
 }

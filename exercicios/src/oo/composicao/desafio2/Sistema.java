@@ -7,9 +7,14 @@ public class Sistema {
 		Compra compra1 = new Compra();
 		compra1.adicionarItem(new Produto("Caneta", 10), 10);
 		
-		Cliente cliente1 = new Cliente("Renato", compra1);
+		Cliente cliente1 = new Cliente("Renato");
+		cliente1.adicionarCompra(compra1);
 		
 		
+		System.out.println(cliente1.nome);
+		
+		System.out.println(cliente1.obterValorTotal());
+		cliente1.mostrarCompras();
 
 	}
 }
