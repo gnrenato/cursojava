@@ -1,7 +1,8 @@
 package oo.heranca;
 
 //154 Enum
-//155 - Heranca
+//155 - Heranca 01
+//156 - Heranca 02
 public class Jogador {
 
 	int vida = 100;
