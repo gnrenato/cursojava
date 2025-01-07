@@ -1,5 +1,6 @@
 package oo.heranca.desafio;
 
+// desafio heranca 01 e 02
 public class Dirigir {
 
 	public static void main(String[] args) {
@@ -8,11 +9,24 @@ public class Dirigir {
 		civic.acelerar();
 		civic.acelerar();
 		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+		civic.acelerar();
+	
 
 		Carro ferrari = new Ferrari();
 		ferrari.acelerar();
 		ferrari.acelerar();
 		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+
 
 		System.out.println("Civic " + civic);
 		System.out.println("Ferrari " + ferrari);
