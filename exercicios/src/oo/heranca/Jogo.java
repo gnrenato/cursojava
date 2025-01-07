@@ -3,6 +3,7 @@ package oo.heranca;
 // 154 Enum
 //155 - Heranca 01
 //156 - Heranca 02
+//159 - Heranca 03
 public class Jogo {
 
 	public static void main(String[] args) {
@@ -11,9 +12,7 @@ public class Jogo {
 		monstro.x = 10;
 		monstro.y = 10;
 		
-		Jogador heroi = new Heroi();
-		heroi.x = 10;
-		heroi.y = 11;
+		Jogador heroi = new Heroi(10, 11);
 		
 		System.out.println("Monstro tem " + monstro.vida + " vida");
 		System.out.println("Heroi tem " + heroi.vida + " vida");

@@ -3,11 +3,18 @@ package oo.heranca;
 //154 Enum
 //155 - Heranca 01
 //156 - Heranca 02
+//159 - Heranca 03
 public class Jogador {
 
 	int vida = 100;
 	int x;
 	int y;
+
+
+	Jogador(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
 
 	boolean atacar(Jogador oponente) {
 
@@ -23,7 +30,7 @@ public class Jogador {
 		} else {
 			return false;
 		}
-		
+
 	}
 
 //	utilizando enum
