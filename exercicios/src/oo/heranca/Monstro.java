@@ -5,11 +5,11 @@ package oo.heranca;
 //159 - Heranca 03
 public class Monstro extends Jogador {
 
-	Monstro() {
+	public Monstro() {
 		this(0, 0);
 	}
 	
-	Monstro(int x, int y){
+	private Monstro(int x, int y){
 		super(0,0);
 	}
 }

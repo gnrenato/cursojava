@@ -5,12 +5,12 @@ package oo.heranca;
 //159 - Heranca 03
 public class Heroi extends Jogador {
 
-	Heroi(int x, int y) {
+	public Heroi(int x, int y) {
 		super(x ,y);
 	}
 
 	// reescrita do metodo da classe pai jogador
-	boolean atacar(Jogador oponente) {
+	public boolean atacar(Jogador oponente) {
 		boolean ataque1 = super.atacar(oponente); // chamar o metodo da classe super(pai)
 		boolean ataque2 = super.atacar(oponente);
 		return ataque1 || ataque2;
