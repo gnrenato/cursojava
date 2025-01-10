@@ -4,11 +4,25 @@ package oo.encapsulamento;
 public class Pessoa {
 
 	private String nome;
+	private String sobrenome;
 	private int idade;
 
-	public Pessoa(int idade, String nome) {
+	public Pessoa(String nome, String sobrenome, int idade) {
 		setNome(nome);
+		setSobrenome(sobrenome);
 		setIdade(idade);
+	}
+
+	public String getSobrenome() { // mostra informação
+		return sobrenome;
+	}
+
+	public void setSobrenome(String sobrenome) { // altera informação
+		this.sobrenome = sobrenome;
+	}
+
+	public String getNomeCompleto() { // get sem atributo definido
+		return "Nome Completo: " + getNome() + " " + getSobrenome();
 	}
 
 	public String getNome() {
