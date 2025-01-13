@@ -5,6 +5,7 @@ import oo.heranca.desafio.Civic;
 import oo.heranca.desafio.Ferrari;
 
 // desafio heranca 01 e 02
+//169 Interface
 public class Dirigir {
 
 	public static void main(String[] args) {
@@ -20,11 +21,14 @@ public class Dirigir {
 		civic.acelerar();
 	
 
-		Carro ferrari = new Ferrari();
+		Ferrari ferrari = new Ferrari();
 		ferrari.acelerar();
 		ferrari.acelerar();
 		ferrari.acelerar();
 		ferrari.acelerar();
+		ferrari.ligarTurbo();
+		ferrari.ligarAr();
+		ferrari.desligaAr();
 		ferrari.acelerar();
 		ferrari.acelerar();
 		ferrari.acelerar();
@@ -41,6 +45,7 @@ public class Dirigir {
 		civic.frear();
 		civic.frear();
 		ferrari.frear();
+		
 		
 		System.out.println("Civic " + civic);
 		System.out.println("Ferrari " + ferrari);
