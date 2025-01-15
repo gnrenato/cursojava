@@ -1,7 +1,7 @@
 package oo.polimorfismo;
 
 //167 - polimorfismo 168 - resposta desafio polimorfismo
-public class Comida {
+public abstract class Comida {
 	
 	private double peso;
 	
