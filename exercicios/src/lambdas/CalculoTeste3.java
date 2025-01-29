@@ -2,7 +2,7 @@ package lambdas;
 
 import java.util.function.BinaryOperator; // usando interface funcional do java
 
-// 178 - Usando Interface funcionais 
+// 178 - Usando Interface funcionais git	
 public class CalculoTeste3 {
 // 175 - Primeira função lambda
 	public static void main(String[] args) {
