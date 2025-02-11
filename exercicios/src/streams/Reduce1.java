@@ -13,7 +13,7 @@ public class Reduce1 {
 
 		BinaryOperator<Integer> soma = (ac, n) -> ac + n; // função para somar os numeros
 
-		int total1 = nums.stream().reduce(soma).get(); // criando o stream utilzando reduce como termial, associando a
+		int total1 = nums.parallelStream().reduce(soma).get(); // criando o stream utilzando reduce como termial, associando a
 														// uma variavel do tipo primitivo
 		System.out.println(total1);
 
