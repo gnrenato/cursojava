@@ -1,9 +1,0 @@
-package excecao;
-
-public class basico {
-
-	public static void main(String[] args) {
-		
-		System.out.println(7 / 0);
-	}
-}
