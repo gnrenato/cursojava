@@ -3,9 +3,9 @@ package excecao;
 //203 Filter 2
 public class Aluno {
 
-	final String nome;
-	final double nota;
-	final boolean bomComportmento;
+	public final String nome;
+	public final double nota;
+	public final boolean bomComportmento;
 
 	public Aluno(String nome, double nota) {
 		this(nome, nota, true);
