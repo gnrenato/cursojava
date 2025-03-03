@@ -14,6 +14,6 @@ public class NumeroForaIntervaloException extends RuntimeException {
 
 	public String getMessage() {
 		
-		return String.format("O atributo %s está fora do intervalo", nomeDoAtributo);
+		return String.format("O atributo '%s' está fora do intervalo", nomeDoAtributo);
 	}
 }
