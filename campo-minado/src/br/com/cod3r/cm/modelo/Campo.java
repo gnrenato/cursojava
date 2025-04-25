@@ -42,30 +42,33 @@ public class Campo {
 			return false;
 		}
 	}
-	
+
+	// Faz a alteração da marcação aberto/fechado
 	void alternarMarcação() {
 		if (!aberto) {
 			marcado = !marcado;
 		}
 	}
-	
+
 	boolean abrir() {
 		if (!aberto && !marcado) {
 			aberto = true;
-			
+
 			if (minado) {
-				throw new ExplosaoException(); 
+				throw new ExplosaoException();
 			}
-			
+
 			if (vizinhancaSegura()) {
-				//chamada recursiva - do metodo abrir
+				// chamada recursiva - do metodo abrir
 				vizinhos.forEach(v -> v.abrir());
 			}
+			return true;
+		} else {
+			return false;
 		}
-		
-		return false;
+
 	}
-	
+
 	boolean vizinhancaSegura() {
 		return vizinhos.stream().noneMatch(v -> v.minado);
 	}
