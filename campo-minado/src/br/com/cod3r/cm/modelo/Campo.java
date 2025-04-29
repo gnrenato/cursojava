@@ -81,6 +81,10 @@ public class Campo {
 		return marcado;
 	}
 	
+	public boolean isMinado() {
+		return minado;
+	}
+	
 	public boolean isAberto() {
 		return aberto;
 	}
