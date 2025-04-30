@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
+import br.com.cod3r.cm.excecao.ExplosaoException;
+
 // 239 Classe Tabuleiro
 public class Tabuleiro {
 
@@ -24,7 +26,12 @@ public class Tabuleiro {
 	}
 	
 	public void abrir(int linha, int coluna) {
-		campos.parallelStream().filter(c -> c.getLinha() == linha && c.getColuna() == coluna).findFirst().ifPresent(c -> c.abrir());
+		try {
+			campos.parallelStream().filter(c -> c.getLinha() == linha && c.getColuna() == coluna).findFirst().ifPresent(c -> c.abrir());
+		} catch (ExplosaoException e) {
+			campos.forEach(c -> c.setAberto(true));
+			throw e;
+		}
 	}
 	
 	public void alternarMarcação(int linha, int coluna) {
