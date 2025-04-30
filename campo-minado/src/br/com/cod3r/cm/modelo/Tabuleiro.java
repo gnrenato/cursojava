@@ -59,10 +59,11 @@ public class Tabuleiro {
 		Predicate<Campo> minado = c -> c.isMinado();
 
 		do {
-			minasArmadas = campos.stream().filter(minado).count();
+			
 			int aleatorio = (int) (Math.random() * campos.size()); // prioridade de cast utilizando () como na
 																	// matematica
 			campos.get(aleatorio).minar();
+			minasArmadas = campos.stream().filter(minado).count();
 		} while (minasArmadas < minas);
 	}
 
