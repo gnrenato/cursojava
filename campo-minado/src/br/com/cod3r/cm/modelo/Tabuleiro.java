@@ -24,18 +24,20 @@ public class Tabuleiro {
 		associarVizinhos();
 		sortearMinas();
 	}
-	
+
 	public void abrir(int linha, int coluna) {
 		try {
-			campos.parallelStream().filter(c -> c.getLinha() == linha && c.getColuna() == coluna).findFirst().ifPresent(c -> c.abrir());
+			campos.parallelStream().filter(c -> c.getLinha() == linha && c.getColuna() == coluna).findFirst()
+					.ifPresent(c -> c.abrir());
 		} catch (ExplosaoException e) {
 			campos.forEach(c -> c.setAberto(true));
 			throw e;
 		}
 	}
-	
+
 	public void alternarMarcação(int linha, int coluna) {
-		campos.parallelStream().filter(c -> c.getLinha() == linha && c.getColuna() == coluna).findFirst().ifPresent(c -> c.alternarMarcação());
+		campos.parallelStream().filter(c -> c.getLinha() == linha && c.getColuna() == coluna).findFirst()
+				.ifPresent(c -> c.alternarMarcação());
 	}
 
 	private void gerarCampos() {
@@ -59,7 +61,7 @@ public class Tabuleiro {
 		Predicate<Campo> minado = c -> c.isMinado();
 
 		do {
-			
+
 			int aleatorio = (int) (Math.random() * campos.size()); // prioridade de cast utilizando () como na
 																	// matematica
 			campos.get(aleatorio).minar();
@@ -78,13 +80,24 @@ public class Tabuleiro {
 
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
+		sb.append("   ");
+
+		for (int c = 0; c < colunas; c++) {
+			sb.append(" ");
+			sb.append(c);
+			sb.append(" ");
+		}
+
+		sb.append("\n");
 
 		int i = 0;
 		for (int l = 0; l < linhas; l++) {
-
+			sb.append(" ");
+			sb.append(l);
+			sb.append(" ");
 			for (int c = 0; c < colunas; c++) {
 				sb.append(" ");
-				sb.append(campos.get(i));				
+				sb.append(campos.get(i));
 				sb.append(" ");
 				i++;
 			}
