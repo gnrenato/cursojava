@@ -1,5 +1,6 @@
 package generics;
 
+//248 - Exmeplo Basico SEM Generics
 public class CaixaObjetoTeste {
 
 	public static void main(String[] args) {
