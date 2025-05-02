@@ -6,7 +6,7 @@ public class CaixaTeste {
 	public static void main(String[] args) {
 
 		// Não precisamos realizar o cast para que utilizamos, definindo o tipo quando
-		// criamos o objeto
+		// estanciamos a classe
 		Caixa<String> caixaA = new Caixa<>();
 		caixaA.guardar("Segredo");
 
