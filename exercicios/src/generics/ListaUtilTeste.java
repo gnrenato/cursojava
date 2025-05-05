@@ -20,7 +20,7 @@ public class ListaUtilTeste {
 		String ultimaLinguagem2 = ListaUtil.getUltimo2(langs);
 		System.out.println(ultimaLinguagem2);
 		
-		Integer ultimoNumero2 = ListaUtil.<Integer>getUltimo2(nums);
+		Integer ultimoNumero2 = ListaUtil.<Integer>getUltimo2(nums); //explicitado que seja do tipo integer
 		System.out.println(ultimoNumero2);
 		
 		
